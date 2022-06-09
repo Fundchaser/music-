@@ -1,0 +1,62 @@
+<doctype html>
+<html>
+<head>
+	<title>Contact Us</title>
+<style>
+body{
+background-image:url('2.jpeg');
+ background-repeat: no-repeat;
+background-size: cover;
+color: red}
+
+a{
+text-decoration: none;
+}
+</style>
+
+</head>
+<body style="text-align: center">
+<form>
+		<h1> Contact Us </h1>
+		
+		<p><label>First Name</label><br>
+		<input type="text"><br></p>
+		
+		<p><label> Surname</label><br>
+		<input type="text"><br></p>
+		
+		<p><label>Institution Level</label><br>
+		<form action="/action_page.php">
+		<input list="Institution Level">
+		<datalist id="Institution Level">
+		<option value="Primary"></option>
+    		<option value="Secondary"></option>
+    		<option value="Tertiary"></option>
+    		<option value="NYSC"></option>
+		<option value="Masters"></option>
+		<option value="PHD"></option>
+		 </datalist></p>
+		
+		<p><label>Country of residence</label><br>
+		<form action="/action_page.php">
+		<input list="Country of residence">
+		<datalist id="Country of residence">
+   		<option value="Nigeria">Nigeria</option>
+    		<option value="UK"></option>
+    		<option value="USA"></option>
+		</datalist></p>
+		
+
+		<p><label>Telephone Number</label><br>
+		<input type="tel"></p>
+
+		<p><label>Please include any comments here<label><br>
+		<form action="action_page.php">
+  		<textarea name="message" style="width:400px; height:250px;">
+  		
+  		</textarea>
+
+	<p style="text-align:center"><button type="button" onclick="alert('Thank You for the response!')"><a href="../menus/Rap.html">Submit</a></button><p>
+
+</body>
+</html>

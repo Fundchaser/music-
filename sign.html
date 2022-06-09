@@ -1,0 +1,126 @@
+<doctype html>
+<html>
+<head>
+	<title>Contact Us</title>
+<style>
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+ background-image:url('1.jpeg');
+ background-repeat: repeat;
+  padding: 100px;
+	}
+
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #bb6faf;
+  padding: 100px;
+text-align: center;
+	}
+a{
+text-decoration: none;
+}
+</style>
+<script>
+function pav(){
+		var x=document.forms["form"]["n1"].value;
+		var y=document.forms["form"]["n2"].value;
+		var z=document.forms["form"]["pass"].value;
+		if(x==""){
+		alert("Fill in your First name");
+		return false;
+		}
+		else if(y==""){
+		alert("Fill in your Surname");
+		return false;
+		}
+		else if(z.length<8){
+		alert("Password Must be 6 characters or longer")
+		return false;
+		}
+		else{
+		alert("Entering The World Of Music")
+		return true;
+		}
+		}
+</script>
+</head>
+<body>
+<div>
+<section>
+<nav>
+<h1 style="text-align:center; color: blue; font-size:50px">Music Then</h1>
+<h1 style="text-align:center; color: blue; font-size:50px"> Music Now</h1>
+<h1 style="text-align:center; color: blue; font-size:50px"> Music Forever</h1>
+</nav>
+<article>
+
+	<h1 style="font-size: 50px">Sign Up</h1>
+	<form name="form">
+		<p><label>First Name</label><br>
+		<input type="text" id="n1"><br></p>
+		
+		<p><label> Surname</label><br>
+		<input type="text" id="n2"><br></p>
+		
+		<h3>Gender</h3>
+		 <input type="radio">
+		<label>Male</label><br>
+		<input type="radio">
+		<label>Female</label><br>
+		<p><label> Email Adress</label><br>
+		<input type="email"><br></p>
+		
+		<p><label> Password</label><br>
+		<input type="password" id="pass"><br></p>
+
+		<p><label> Date of Birth</label><br>
+		<input type="date"><br></p>
+		
+		<label>Country of residence</label><br>
+		<form action="/action_page.php">
+		<input list="Country of residence">
+		<datalist id="Country of residence">
+   		<option value="Nigeria">Nigeria</option>
+    		<option value="UK"></option>
+    		<option value="USA"></option>
+  		</datalist>
+		
+		<p><label> State Of Residence</label><br>
+		<input type="text"><br></p>
+	
+		<p><label> City/Town</label><br>
+		<input type="text"><br></p>
+		
+		<p><label>Telephone Number</label><br>
+		<input type="tel"></p>
+
+		<h3>Hobbies</h3>
+		<input type="checkbox">
+		<label>Playing Games</label>
+		<input type="checkbox">
+		<label>Writing</label>
+		<input type="checkbox">
+		<label>Dancing</label>
+		<input type="checkbox">
+		<label>Coding</label>
+		<input type="checkbox">
+		<label>Working Out</label>
+		<input type="checkbox">
+		<label>Cooking</label>
+		<input type="checkbox">
+		<label>Boxing</label>
+	<p><button type="button" onclick="pav();">Submit</button><p>
+	<p><a href="../menus/Rap.html">Return</a><p>
+	
+
+</body>
+</html>
